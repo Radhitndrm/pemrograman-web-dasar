@@ -107,6 +107,12 @@ Bootstrap adalah framework CSS open-source dengan komponen UI siap pakai.
 ---
 
 ## 📷 Preview
+### Preview Tailwind CSS
+![Tailwind Preview](images/tailwind.png)
+
+### Preview Boostrap CSS
+![Boostrap Preview](images/boostrap.png)
+
 
 Halaman menampilkan:  
 - Sidebar navigasi (Home, Search, Explore, dll).  
