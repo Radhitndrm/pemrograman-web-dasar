@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Profile Clone (Pajangan)</title>
+  <title>Instagram Profile Clone (Tailwind)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/feather-icons"></script>
@@ -25,14 +25,20 @@
     </div>
 
     <div class="flex-1 p-0">
-      <div class="flex flex-col pt-20 ml-5 md:flex-row md:items-center mb-10 px-5 md:px-10">
+      <div class="flex flex-col md:flex-row md:items-center pt-20 mb-10 px-5 md:px-10">
         <img src="images/profile.jpg" alt="Profile Picture"
           class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
-        <div>
+        <div class="flex-1">
           <div class="flex items-center mb-2">
             <span class="text-2xl font-bold mr-3">radhitndrm</span>
-            <div class="border border-white text-white text-sm px-3 py-1 mr-2 rounded cursor-default">Edit profile</div>
-            <div class="border border-white text-white text-sm px-3 py-1 rounded cursor-default">View archive</div>
+            <button class="border border-white text-white text-sm px-3 py-1 mr-2 rounded order-2 md:order-1
+         hover:bg-white hover:text-black transition duration-300 ease-in-out">
+              Follow
+            </button>
+            <button class="border border-white text-white text-sm px-3 py-1 rounded order-1 md:order-2
+         hover:bg-white hover:text-black transition duration-300 ease-in-out">
+              Edit Profile
+            </button>
           </div>
           <div class="flex mb-2">
             <div class="font-medium mr-5">8 posts</div>
@@ -47,7 +53,7 @@
         </div>
       </div>
 
-      <div class="flex justify-center text-gray-400 text-sm font-medium">
+      <div class="flex justify-center text-gray-400 text-sm font-medium mb-4">
         <div class="flex items-center px-6 py-3 text-white border-t border-white">
           <i data-feather="grid" class="w-4 h-4 mr-2"></i> POSTS
         </div>
@@ -59,7 +65,7 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-2 md:grid-cols-3 gap-1 px-[90px]">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-1 px-5 md:px-10">
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/1.png" alt="Post 1" class="w-full h-full object-cover">
           <div
@@ -67,6 +73,7 @@
             ❤ 256
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/2.png" alt="Post 2" class="w-full h-full object-cover">
           <div
@@ -74,20 +81,23 @@
             ❤ 312
           </div>
         </div>
-        <div class="relative group aspect-[4/5] overflow-hidden">
+
+        <div class="relative group aspect-[4/5] overflow-hidden order-4 lg:order-3">
           <img src="images/3.jpg" alt="Post 3" class="w-full h-full object-cover">
           <div
             class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 198
           </div>
         </div>
-        <div class="relative group aspect-[4/5] overflow-hidden">
+
+        <div class="relative group aspect-[4/5] overflow-hidden order-3 lg:order-4">
           <img src="images/4.jpg" alt="Post 4" class="w-full h-full object-cover">
           <div
             class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 402
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/5.jpg" alt="Post 5" class="w-full h-full object-cover">
           <div
@@ -95,6 +105,7 @@
             ❤ 150
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/6.png" alt="Post 6" class="w-full h-full object-cover">
           <div
@@ -102,6 +113,7 @@
             ❤ 275
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/7.png" alt="Post 7" class="w-full h-full object-cover">
           <div
@@ -109,6 +121,7 @@
             ❤ 340
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/8.png" alt="Post 8" class="w-full h-full object-cover">
           <div
@@ -116,6 +129,7 @@
             ❤ 410
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/9.png" alt="Post 9" class="w-full h-full object-cover">
           <div
@@ -123,6 +137,7 @@
             ❤ 225
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/10.png" alt="Post 10" class="w-full h-full object-cover">
           <div
@@ -130,6 +145,7 @@
             ❤ 188
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/11.jpg" alt="Post 11" class="w-full h-full object-cover">
           <div
@@ -137,6 +153,7 @@
             ❤ 305
           </div>
         </div>
+
         <div class="relative group aspect-[4/5] overflow-hidden">
           <img src="images/12.jpg" alt="Post 12" class="w-full h-full object-cover">
           <div

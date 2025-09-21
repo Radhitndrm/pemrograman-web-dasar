@@ -1,80 +1,71 @@
-   body {
-     background-color: #000;
-     color: #fff;
-     font-family: Arial, sans-serif;
-   }
+body {
+  background-color: #000;
+  color: #fff;
+}
 
-   .sidebar {
-     width: 220px;
-     border-right: 1px solid #1c1c1c;
-   }
+.sidebar .nav-link {
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+}
 
-   .sidebar-item {
-     padding: 10px 20px;
-     border-radius: 8px;
-     cursor: default;
-   }
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+  background-color: #1c1c1c;
+}
 
-   .sidebar-item:hover {
-     background-color: #1c1c1c;
-   }
+.post-card {
+  position: relative;
+  overflow: hidden;
+}
 
-   .profile-img {
-     width: 120px;
-     height: 120px;
-     object-fit: cover;
-     border-radius: 50%;
-   }
+.post-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-   .nav-tabs {
-     border: none;
-   }
+.post-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
-   .nav-tabs .nav-link {
-     color: #aaa;
-     border: none;
-     font-weight: 500;
-     display: flex;
-     align-items: center;
-   }
+.post-card:hover .post-overlay {
+  opacity: 1;
+}
 
-   .nav-tabs .nav-link.active {
-     color: #fff;
-     background-color: black;
-     border-top: 1px solid #fff;
-   }
+.profile-img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
+@media (min-width: 768px) {
+  .profile-img {
+    width: 10rem;
+    height: 10rem;
+  }
+}
 
-   .nav-tabs .nav-link i {
-     margin-right: 6px;
-   }
+.tab-item {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: #ccc;
+}
 
-   .post {
-     position: relative;
-     overflow: hidden;
-     aspect-ratio: 4/5;
-   }
-
-   .post img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-   }
-
-   .overlay {
-     position: absolute;
-     inset: 0;
-     background: rgba(0, 0, 0, 0.5);
-     color: #fff;
-     font-weight: bold;
-     font-size: 18px;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     opacity: 0;
-     transition: opacity .3s ease;
-   }
-
-   .post:hover .overlay {
-     opacity: 1;
-   }
+.tab-item.active {
+  border-top: 2px solid #fff;
+  color: #fff;
+}
