@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belajar div container</title>
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Contoh Div dan Container</h1>
+
+  <div>
+    <h3>Artiker Pertama</h3>
+    <p>Ini adalah isi artiker pertama yang dibungkus dalam div</p>
+    <p>Div membantu mengelompokan elemen-elemen yang terkait</p>
+  </div>
+
+  <div>
+    <h3>Artikel Kedua</h3>
+    <p>Ini adalah isi artikel kedua dalam div terpisah</p>
+    <p>Setiap div dapat berisi beberapa elemen HTML</p>
+  </div>
+
+  <h2>div untuk Layout Sederhana</h2>
+  <div id="page">
+    <div id="top-header">
+      <h3>Website Header</h3>
+      <p>Logo dan navigasi biasanya di sini</p>
+    </div>
+
+    <div id="navigation">
+      <h4>Navigation Menu</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="main-body">
+      <h4>Footer</h4>
+      <p>Copyright dan informasi kontak di footer</p>
+    </div>
+  </div>
+
+  <h2>Nested DIv (Div Bersarang)</h2>
+  <div id="wrapper">
+    <h3>Wrapper Containjer</h3>
+    <div class="sidebar">
+      <h4>Sidebar</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <h4>Main Content</h4>
+      <p>Ini adalah konten utama yang berada di dalam wrapper</p>
+      <div class="article">
+        <h5>Sub Article</h5>
+        <p>Artikel kecil di dalam main content</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Div dengan ID dan Class</h2>
+  <div id="header">
+    <h3>Header Section</h3>
+    <p>Div ini memiliki ID "header" untuk identifikaaasi unik</p>
+  </div>
+
+  <div class="content">
+    <h3>Content Section</h3>
+    <p>Div ini memiliki class "content" yang bisa digunakan berkali-kali</p>
+  </div>
+
+  <div class="content">
+    <h3>Content Section Lainnya</h3>
+    <p>Div ini juga menggunakan class "content" yang sama</p>
+  </div>
+</body>
+
+</html>

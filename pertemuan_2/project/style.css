@@ -1,0 +1,286 @@
+:root {
+  --bg: black;
+  --prim: gold;
+  --default: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: gray;
+  overflow-x: hidden;
+}
+
+.nav-title {
+  font-family: 'Kanit', sans-serif;
+}
+
+@media screen {}
+
+.nav {
+  list-style-type: none;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 90%;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+.nav li a {
+  font-family: 'Kanit', sans-serif;
+  text-decoration: none;
+  color: var(--bg);
+}
+
+.nav li a:hover {
+  color: var(--default);
+  transition: 0.5s;
+}
+
+.hero-img {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/hbdimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-text {
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+
+}
+
+.hero-text p {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  padding-right: 75px;
+  padding-left: 75px;
+}
+
+.hero-text button {
+  border: 1px;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.hero-text button a {
+  text-decoration: none;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+  text-decoration: none;
+}
+
+
+.content-img img {
+  height: 100%;
+  background-color: white;
+
+}
+
+.content-text {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--default);
+  float: right;
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 50px;
+}
+
+.wishes {
+  margin-top: 20px;
+  background-color: gray;
+  margin-bottom: 20px;
+}
+
+
+.wishes h1 {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  color: var(--default);
+
+}
+
+.wishes-text p {
+  text-align: center;
+  margin-bottom: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.wishes-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 70px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+.memory {
+  color: var(--default);
+  text-align: center;
+  margin-right: 10px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.memory1 {
+  margin-top: 30px;
+  width: 65%;
+  margin-left: 300px;
+}
+
+.memory1 img {
+  border: 5px solid white;
+}
+
+.memory1 p {
+  margin-top: 90px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.memory2 {
+  margin-top: 30px;
+  width: 85%;
+  float: right;
+  margin-right: 100px;
+}
+
+.memory2 img {
+  border: 5px solid white;
+}
+
+
+.memory2 p {
+  margin-top: 140px;
+  margin-right: 90px;
+  margin-left: 50px;
+  float: left;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.memory3 {
+  margin-top: 30px;
+  width: 55%;
+  margin-left: 300px;
+}
+
+.memory3 img {
+  border: 5px solid white;
+}
+
+
+.memory3 p {
+  margin-top: 180px;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  color: white
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width:768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav {
+    font-size: small;
+    display: block;
+    margin-left: 90px;
+  }
+
+  .nav-title {
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 95px;
+  }
+
+  .hero-text p {
+    font-size: smaller;
+    width: 65%;
+    text-align: center;
+    margin-right: 240px;
+  }
+
+  .content-img {
+    margin-left: 190px;
+    width: 65%;
+  }
+
+  .memory1 img {
+    margin-right: 1000px;
+    float: none;
+  }
+
+  .memory1 p {
+    font-size: smaller;
+    width: 65%;
+    text-align: center;
+    margin-right: 240px;
+    margin-right: 280px;
+  }
+
+  .memory2 p {
+    font-size: smaller;
+    width: 65%;
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 280px;
+    margin-bottom: 50px;
+  }
+
+  .memory3 img {
+    width: 100%;
+    margin-right: 100px;
+    float: none;
+    align-items: center;
+  }
+
+  .memory3 p {
+    font-size: smaller;
+    width: 65%;
+    text-align: center;
+    margin-left: 130px;
+    margin-right: 250px;
+    margin-bottom: 50px;
+  }
+
+}
