@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Instagram Profile Clone</title>
+  <title>Instagram Profile Clone (Pajangan)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="bg-black text-white font-sans">
@@ -13,25 +14,25 @@
   <div class="flex min-h-screen">
     <div class="w-1/5 bg-black border-r border-gray-900 hidden md:flex flex-col pt-5">
       <h4 class="px-4 mb-6 text-white text-xl font-bold">Instagram</h4>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Home</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Search</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Explore</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Reels</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Messages</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Notifications</a>
-      <a href="#" class="px-5 py-3 hover:bg-gray-900 rounded-lg">Create</a>
-      <a href="#" class="px-5 py-3 font-bold hover:bg-gray-900 rounded-lg">Profile</a>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Home</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Search</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Explore</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Reels</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Messages</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Notifications</div>
+      <div class="px-5 py-3 hover:bg-gray-900 rounded-lg">Create</div>
+      <div class="px-5 py-3 font-bold hover:bg-gray-900 rounded-lg">Profile</div>
     </div>
 
-    <div class="flex-1 p-5 md:p-10">
-      <div class="flex flex-col md:flex-row md:items-center mb-10">
+    <div class="flex-1 p-0">
+      <div class="flex flex-col pt-20 ml-5 md:flex-row md:items-center mb-10 px-5 md:px-10">
         <img src="images/profile.jpg" alt="Profile Picture"
           class="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4 md:mb-0 md:mr-6">
         <div>
           <div class="flex items-center mb-2">
             <span class="text-2xl font-bold mr-3">radhitndrm</span>
-            <button class="border border-white text-white text-sm px-3 py-1 mr-2 rounded">Edit profile</button>
-            <button class="border border-white text-white text-sm px-3 py-1 rounded">View archive</button>
+            <div class="border border-white text-white text-sm px-3 py-1 mr-2 rounded cursor-default">Edit profile</div>
+            <div class="border border-white text-white text-sm px-3 py-1 rounded cursor-default">View archive</div>
           </div>
           <div class="flex mb-2">
             <div class="font-medium mr-5">8 posts</div>
@@ -46,99 +47,100 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-        <div class="relative group">
-          <img src="images/1.png" alt="Post 1" class="w-full h-72 object-cover">
+      <div class="flex justify-center text-gray-400 text-sm font-medium">
+        <div class="flex items-center px-6 py-3 text-white border-t border-white">
+          <i data-feather="grid" class="w-4 h-4 mr-2"></i> POSTS
+        </div>
+        <div class="flex items-center px-6 py-3">
+          <i data-feather="play" class="w-4 h-4 mr-2"></i> REELS
+        </div>
+        <div class="flex items-center px-6 py-3">
+          <i data-feather="bookmark" class="w-4 h-4 mr-2"></i> SAVED
+        </div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-1 px-[90px]">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/1.png" alt="Post 1" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 256
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/2.png" alt="Post 2" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/2.png" alt="Post 2" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 312
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/3.jpg" alt="Post 3" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/3.jpg" alt="Post 3" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 198
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/4.jpg" alt="Post 4" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/4.jpg" alt="Post 4" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 402
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/5.jpg" alt="Post 5" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/5.jpg" alt="Post 5" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 150
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/6.png" alt="Post 6" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/6.png" alt="Post 6" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 275
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/7.png" alt="Post 7" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/7.png" alt="Post 7" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 340
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/8.png" alt="Post 8" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/8.png" alt="Post 8" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 410
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/9.png" alt="Post 9" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/9.png" alt="Post 9" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 225
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/10.png" alt="Post 10" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/10.png" alt="Post 10" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 188
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/11.jpg" alt="Post 11" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/11.jpg" alt="Post 11" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 305
           </div>
         </div>
-
-        <div class="relative group">
-          <img src="images/12.jpg" alt="Post 12" class="w-full h-72 object-cover">
+        <div class="relative group aspect-[4/5] overflow-hidden">
+          <img src="images/12.jpg" alt="Post 12" class="w-full h-full object-cover">
           <div
-            class="absolute inset-0 bg-black bg-opacity-30 flex justify-center items-center text-white font-bold text-lg opacity-0 group-hover:opacity-100 transition-opacity">
+            class="absolute inset-0 bg-black bg-opacity-40 flex justify-center items-center text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity">
             ❤ 412
           </div>
         </div>
@@ -146,6 +148,9 @@
     </div>
   </div>
 
+  <script>
+    feather.replace();
+  </script>
 </body>
 
 </html>
