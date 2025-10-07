@@ -1,0 +1,43 @@
+<html>
+
+<head>
+  <title>Soal Latihan></title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    var nilai = prompt("Nilai (0-100): ", 0);
+    var hasil = "";
+    var huruf = "";
+    if (nilai >= 80) {
+      huruf = "A";
+      hasil = "Lulus";
+    } else if (nilai >= 75) {
+      huruf = "AB";
+      hasil = "Lulus";
+    } else if (nilai >= 70) {
+      huruf = "B";
+      hasil = "Lulus";
+    } else if (nilai >= 65) {
+      huruf = "BC";
+      hasil = "Lulus";
+    } else if (nilai >= 60) {
+      huruf = "C";
+      hasil = "Lulus";
+    } else if (nilai >= 50) {
+      huruf = "D";
+      hasil = "Tidak Lulus";
+    } else if (nilai <= 49) {
+      huruf = "E";
+      hasil = "Tidak Lulus";
+    }
+    document.write("Nilai Anda : " + nilai);
+    document.write("<br/>");
+    document.write("Huruf :" + huruf);
+    document.write("<br/>");
+    document.write("Anda " + hasil);
+
+  </script>
+</body>
+
+</html>
