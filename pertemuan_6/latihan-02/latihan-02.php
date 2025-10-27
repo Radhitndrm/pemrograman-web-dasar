@@ -1,6 +1,6 @@
 
 <?php
-eco "Hello World";
+echo sadas
 echo "Hello World";
 echo "Hello World";
 echo "Hello World <br/>";
