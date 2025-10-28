@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tugas Uts</title>
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="flex flex-row mt-5 justify-center items-center">
+
+    <div class="grid grid-cols-5 grid-rows-5 gap-4">
+      <div class="col-span-2 row-span-5">
+        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <form id="iniForm">
+            <div class="p-8">
+              <div class="tracking-wide text-sm text-black-500 font-bold mb-5">Input Data</div>
+              <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">NAMA LENGKAP</label>
+                <input type="text"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="nama" type="text" placeholder="Masukan Nama">
+              </div>
+              <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nim">NIM</label>
+                <input type="text"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="nim" type="text" placeholder="2411102..">
+              </div>
+              <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="semester">SEMESTER</label>
+                <input type="text"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="semester" type="text" placeholder="1-8">
+              </div>
+              <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">PROGRAM STUDI</label>
+                <select id="prodi"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                  <option selected>--Pilih--</option>
+                  <option value="Teknik Informatika">Teknik Informatika</option>
+                  <option value="Teknik Mesin">Teknik Mesin</option>
+                  <option value="Teknik Sipil">Teknik Sipil</option>
+                  <option value="Teknik Geologi">Teknik Geologi</option>
+                </select>
+              </div>
+              <div class="mb-5">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="username">EMAIL</label>
+                <input type="email"
+                  class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email" type="text" placeholder="email@example.com">
+              </div>
+              <div class="mb-5">
+                <button class="w-full bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  onclick="submitData()">
+                  Button
+                </button>
+              </div>
+              <div class="mb-5 border-l-4 border-gray-500">
+                <p class="bg-gray-200 bordered px-4 py-2">Isi Data Mahasiswa dengan benar</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+
+      <div class="col-span-2 row-span-2 col-start-3">
+        <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+          <div class="p-8">
+            <div class=" tracking-wide text-sm text-gray-700 font-bold mb-5">Informasi Pengiriman</div>
+            <div class="border-l-4 border-gray-500 bg-gray-200 px-4 py-2">
+              <p class="bordered px-4 py-2 font-bold">Apa Yang terjadi saat Anda klik "Kirim Data"?</p>
+              <div class="mb-2 ml-3">
+                <p class=" mb-1">1. Data ditampilkan di Console</p>
+                <p class=" mb-1">2. Data disimpan di array</p>
+                <p class=" mb-1">3. Jumlah data di-update</p>
+                <p class="mb-1">4. Form akan kosong kembali</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-span-2 row-span-2 col-start-3 row-start-3">
+        <div class="col-span-2 row-span-2 col-start-3">
+          <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
+            <div class="p-10">
+              <div class="tracking-wide text-sm text-gray-700 font-bold mb-5">Table Mahasiswa</div>
+              <div
+                class="relative flex flex-col w-full h-full overflow-scroll text-gray-700 bg-white shadow-md rounded-xl bg-clip-border">
+                <table class="w-full text-left table-auto min-w-max">
+                  <thead>
+                    <tr>
+                      <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                        <p
+                          class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                          No
+                        </p>
+                      </th>
+                      <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                        <p
+                          class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                          Name
+                        </p>
+                      </th>
+                      <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                        <p
+                          class="block font-sans text-sm antialiased font-normal leading-none text-blue-gray-900 opacity-70">
+                          Info
+                        </p>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          1
+                        </p>
+                      </td>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          Budi Santoso
+                        </p>
+                      </td>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          Prodi : Teknik Informatika <br>
+                          Semester : 3
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          2
+                        </p>
+                      </td>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          Siti NurKhalifa
+                        </p>
+                      </td>
+                      <td class="p-4 border-b border-blue-gray-50">
+                        <p class="block font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                          Prodi : Teknik Sipil <br>
+                          Semester : 4
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+<script>
+  var Data = new Array();
+  function submitData() {
+    var name = document.getElementById('nama').value;
+    var nim = document.getElementById('nim').value;
+    var semester = document.getElementById('semester').value;
+    var prodi = document.getElementById('prodi').value
+    var email = document.getElementById('email').value
+
+    Data.push(name, nim, semester, prodi, email);
+    console.log(Data);
+    document.getElementById('nama').value = '';
+    document.getElementById('nim').value = '';
+    document.getElementById('prodi').value = '';
+    document.getElementById('semester').value = '';
+    document.getElementById('email').value = '';
+  }
+</script>
+
+</html>
